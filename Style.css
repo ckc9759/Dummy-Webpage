@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    min-height: 1vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.1),rgba(4,9,30,0.1)),url(images/milton.jpg); 
+    background-position:center;
+    background-size:cover;
+    position:relative;
+}
+nav{
+    display:flex;
+    padding:0% 8%;
+    justify-content:space-between;
+    align-items:center;
+}
+nav img{
+    width:120px;
+
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding: 2px 12px;
+    position:relative;
+
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:#ff6a00;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box {
+    background: #f0e9e9;
+    width: 50%;
+    color: #000;
+    position: absolute;
+    left: 20%;
+    transform: translate(-%.-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size:33px;
+    font-style:italic;
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size:23px;
+    font-style:italic;
+    color:#000;
+}
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    color:#000;
+    border: 1px solid #000000;
+    padding:12px 34px;
+    font-size:13px;
+    background:transparent;
+    position:relative;
+    cursor:pointer;
+}
+    .btn:hover {
+        border: 2px solid #6690ef;
+        background: #34cbd4;
+        transition: 0.75s;
+    }
+@media(max-width: 700px){
+    .text-box h1 {
+        font-size: 18px;
+        font-style: italic;
+    }
+    .nav-links ul li{
+        display:block;
+    }
+    .nav-links{
+        position:absolute;
+        background:#6690ef;
+        height:100vh;
+        width:200px;
+        top:0;
+        right:0;
+        text-align:left;
+        z-index:2;
+    }
+}
+.drinkware{
+    padding:1%;
+    background:#f0e9e9;
+}
+.text-box {
+    padding: 5%;
+}
+.milton2{
+    height:-20vh;
+    width:10px;
+    position:absolute;
+    left:-34%;
+    top:1%;
+}
+.milton1 {
+    height: -20vh;
+    width: 10px;
+    position: absolute;
+    right: 6.2%;
+    top: 1%;
+}
+.row{
+    margin-top:5%;
+    display:flex;
+    justify-content:space-between
+}
+/*----about us-----*/
+.about{
+    background:#fcf7f7;
+    padding-top:20px;
+    width:93%;
+    margin:auto;
+    text-align:center;
+    padding:50px;
+}
+h1{
+    font-size:24px;
+    font-weight:600;
+}
+p{
+    color:#777;
+}
+
+/*----FAQS-----*/
+
+.campus{
+    background:#f7fea8;
+}
+.campus{
+    width:100%;
+    text-align:center;
+    padding-top:80px;   
+}
+.campus-col{
+    width:100%;
+    flex-basis:32%;
+    border-radius:10px;
+    margin-bottom:30px;
+    position:relative;
+    overflow:hidden;
+}
+.campus-col img{
+    text-align:left;
+    height:50vh;
+    width:100%;
+    padding-right:80px;
+}
+.m {
+    padding-left:70px;
+    text-align:left;
+}
+.n{
+    text-align:right;
+    display:flex;
+}
+
+/*---media----*/
+.media{
+    background:#f0e9e9;
+    width:100%;
+    margin:auto;
+    text-align:center;
+    padding-top:80px;
+}
+.media-col{
+    flex-basis:31%;
+    border-radius:10px;
+    margin-bottom:5%;
+    text-align:center;
+}
+.media-col img{
+    width:95%;
+    margin:auto;
+    padding-left:8px;
+    border-radius:8px;
+}
+
+
+/*---testimonials*/
+
+.test{
+    width:100%;
+    margin:auto;
+    padding-top:100px;
+    text-align:center;
+}
+.test h1{
+    font-size:32px;
+}
+.text-col p{
+    padding-top:100px;
+    width:10%;
+    text-align:left ;
+}
+.test-col img{
+    width:95%;
+    height:60vh;
+}
+.mm{
+    font-size:15px;
+}
+.mmc{
+    color:#465b67;
+}
